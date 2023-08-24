@@ -3,60 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <style>
-        body{
-            background-color: black;
-            color: aliceblue;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        a{
-            color: yellow;
-        }
-        h1,h2{
-            text-align: center;
-            color: gold;
-        }
-        section:hover{
-            border: 2px solid aqua;
-            box-shadow: 2px 10px 22px 5px rgb(15, 6, 185);
-
-        }
-        section{
-            background-color: rgb(13, 2, 46);
-            color: aqua;
-            border-radius: 10px;
-            padding: 15px;
-            padding-bottom: 25px;
-            margin: 15px;
-            margin-bottom: 30px;
-            display: flex;
-        }
-        div{
-            flex-direction: row;
-        }
-        img{
-            width: 300px;
-            border-radius: 5px;
-            border: solid 2px greenyellow;
-        }
-        figure{
-            float: left;
-        }
-        article{
-            clear: right;
-        }
-
-    
-    </style>
+    <title>CARS</title>
+    <link rel="icon" type="image/x-icon" href="jag2.ico">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>This is Car Website</h1>
+    <!-- <h1>This is Car Website</h1> -->
+    <nav id="navbar">
+        <a href="#"><img src="logo.png" alt="LOGO"></a>
+        
+        <div id="nav_div">
+            <a href="#" class="nav_a">HOME</a>
+            <a href="about.html" class="nav_a">ABOUT US</a>
+            <a href="contact.html" class="nav_a">CONTACT</a>
+            <a href="" class="nav_a">Sign Up</a>
+
+        </div>        
+    </nav>
+    
     <section>
         <div>
             <h2>Jaguar-XJ</h2>
             <figure>
-                <img src="https://stimg.cardekho.com/images/carexteriorimages/360x240/Jaguar/Jaguar-XJ/047.jpg" alt="">
+                <img class="img_c" src="https://stimg.cardekho.com/images/carexteriorimages/360x240/Jaguar/Jaguar-XJ/047.jpg" alt="">
             </figure>
             <article>
                 Latest Update: Jaguar has launched the XJ50 in India, a special edition variant to celebrate 50 years of its flagship sedan, the XJ. Just like the XJ, the XJ50 can only be had as a long wheelbase option here in India. It is priced at Rs 1.11 crore (ex-showroom India).
@@ -81,7 +50,7 @@
             <h2>Jaguar-XJ L</h2>
         
             <figure>
-                <img src="https://imgd.aeplcdn.com/664x374/cw/ec/21686/Jaguar-XJ-L-Right-Front-Three-Quarter-64990.jpg?v=201711021421&q=75&q=75" alt="">
+                <img class="img_c" src="https://imgd.aeplcdn.com/664x374/cw/ec/21686/Jaguar-XJ-L-Right-Front-Three-Quarter-64990.jpg?v=201711021421&q=75&q=75" alt="">
             </figure>
             
             <article>
@@ -103,7 +72,7 @@
         <div>
             <h2>Jaguar-XF</h2>
             <figure>
-                <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/19826/xf-exterior-right-front-three-quarter.jpeg?q=75&q=75" alt="">
+                <img class="img_c" src="https://imgd.aeplcdn.com/664x374/n/cw/ec/19826/xf-exterior-right-front-three-quarter.jpeg?q=75&q=75" alt="">
             </figure>
             <article>
                 Jaguar XF price for the base model starts at Rs. 71.60 Lakh and the top model price goes upto Rs. 76.00 Lakh (Avg. ex-showroom). XF price for 2 variants is listed below.
@@ -125,7 +94,7 @@
         <div>
             <h2>Jaguar F-Type</h2>
             <figure>
-                <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/46994/jaguar-f-type-right-front-three-quarter18.jpeg?q=75&q=75" alt="">
+                <img class="img_c" src="https://imgd.aeplcdn.com/664x374/n/cw/ec/46994/jaguar-f-type-right-front-three-quarter18.jpeg?q=75&q=75" alt="">
             </figure>
             <article>
                 Jaguar F-Type price for the base model starts at Rs. 99.96 Lakh and the top model price goes upto Rs. 1.53 Crore (Avg. ex-showroom). F-Type price for 3 variants is listed below.
@@ -138,10 +107,5 @@
             </article>
         </div>
     </section>
-
-
-
-    
-    
 </body>
 </html>
