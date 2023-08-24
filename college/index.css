@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(6, 4, 57);
+    margin: -10px;
+    padding: 10px 20px;
+    color: white;
+}
+.nav_div{
+    display: flex;
+    flex-direction: row;
+}
+#clg_name{
+    position: relative;
+    margin-left: 200px;
+}
+#links_div{
+    /* display: flex; */
+    float: right;
+}
+.nav_a{
+    float: right;
+    margin-right: 30px;
+    text-decoration: none;
+    color: yellow;
+}
+.nav_a:hover{
+    color: orange;
+}
+
+.description{
+    margin: 20px 10px;
+    padding: 5px;
+    background-color: rgb(23, 1, 1);
+    border-radius: 10px;
+    border: 2px solid aqua;
+    color: aliceblue;
+}
+.img_desc{
+    height: 200px;
+}
+figure{
+    display: grid;
+    justify-content: center;
+}
