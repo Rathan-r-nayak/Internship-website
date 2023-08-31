@@ -23,6 +23,9 @@ body{
     /* display: flex; */
     float: right;
 }
+#links_nav{
+    list-style: none;
+}
 .nav_a{
     float: right;
     margin-right: 30px;
@@ -34,13 +37,16 @@ body{
 }
 
 .description{
-    margin: 20px 10px;
+    margin-right:  auto;
+    margin-top: 30px;
     padding: 5px;
     background-color: rgb(23, 1, 1);
     border-radius: 10px;
     border: 2px solid aqua;
     color: aliceblue;
 }
+
+
 .img_desc{
     height: 200px;
 }
@@ -48,3 +54,40 @@ figure{
     display: grid;
     justify-content: center;
 }
+
+main{
+    position: absolute;
+    width: 75%;
+
+}
+
+aside{
+    margin-top: 50px;
+    border: 2px solid rgb(252, 252, 252);
+    height: 500px;
+    width: 24%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: wheat;
+    overflow: auto;
+}
+#container{
+    position: relative;
+}
+#ul_aside{
+    list-style: none;
+}
+.elem_aside{
+    padding: 15px;
+}
+.links_aside{
+    text-decoration: none;
+    color: #6aff00;
+}
+.links_aside:hover{
+    color: #ffff00;
+}
+
+
+
