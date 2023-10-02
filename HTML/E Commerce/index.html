@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="navbar_header">
+            <div class="navbar" id="logo">
+                <a href="">
+                    <img height="35px" src="images/logo.png" alt="">
+                </a>
+            </div>
+    
+            <div class="navbar" id="searchbar">
+                <form action="">
+                    <input id="searchbar" type="text" name="searchbar" placeholder="Search for products, brands and more">
+                </form>
+            </div>
+    
+            <div class="navbar" id="cart">
+                <button href="" class="a_anchor"><i class='bx bx-cart'></i>&nbsp;&nbsp;CART</button>
+            </div>
+    
+    
+            <!-- LOGIN -->
+            <div class="navbar" id="login">
+                    <button href="" class="a_anchor" onclick="openLogin()">SIGN IN</button>
+    
+                    
+                    <div class="form-popup" id="form_login" style="display: none;">
+                        <form action="login" method="post" class="form-container">
+                            <button class="close_form" onclick="closeLogin()">
+                                <img src="images/close.png" height="40px" alt="">
+                            </button>
+                            
+                            <p style="text-align:center;margin-top: 45px;">SIGN IN</p>
+        
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+        
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required> 
+        
+                            <button type="submit" class="btn"><a class="btn_a" href="signin">SIGN IN</a></button>
+                        </form>
+                    </div>
+            </div>
+    
+    
+            <!-- SIGN IN -->
+            <div class="navbar" id="signin">
+                <button href="" onclick="openSignin()" class="a_anchor">SIGN UP</button>
+    
+                <div class="form-popup" id="form_signin" style="display: none;">
+                    <form action="" class="form-container">
+                        <button class="close_form" onclick="closeSignin()">
+                            <img src="images/close.png" height="40px" alt="">
+                        </button>
+                        <p style="text-align:center;margin-top: 45px;">SIGN UP</p>
+    
+                        <label for="uname"><b>USERNAME</b></label>
+                        <input type="text" placeholder="Enter User Name" name="uname" required>
+
+                        <label for="umail"><b>USER MAIL</b></label>
+                        <input type="text" placeholder="Enter User E-MAIL" name="umail" required>
+
+                        <label for="fname"><b>FIRST NAME</b></label>
+                        <input type="text" placeholder="Enter First Name" name="fname" required>
+
+                        <label for="lname"><b>LAST NAME</b></label>
+                        <input type="text" placeholder="Enter Last Name" name="lname" required>
+
+                        <label for="age"><b>AGE</b></label>
+                        <input type="text" placeholder="Enter age" name="age" required>
+
+                        <label for="address"><b>ADDRESS</b></label>
+                        <input type="text" placeholder="Enter address" name="address" required>
+
+
+                        <label for="psw"><b>PASSWORD</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+                        <button class="btn"><a class="btn_a" href="">Sign Up</a></button>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+    
+    
+        <div id="category_navbar">
+            
+        </div>
+    </header>
+    
+    
+    <main>
+        <div id="products">
+            <div class="products">
+                <div class="product_img">
+                    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/w/v/b/-original-imagz3cuzzsyh8ud.jpeg?q=70" alt="">
+                </div>
+                <div class="product_det">
+                    <p>Infinix HOT 30i (Glacier Blue, 128 GB)</p>
+                    <p>₹8,999</p>
+                    <div class="product_rating">
+                        <p><i class='bx bxs-star'></i>&nbsp;&nbsp;4.2</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="products">
+                <div class="product_img">
+                    <img src="https://rukminim2.flixcart.com/image/312/312/l5jxt3k0/dslr-camera/m/n/a/-original-imagg7hsggshhwbz.jpeg?q=70" alt="">
+                </div>
+                <div class="product_det">
+                    <p>SONY Alpha Full Frame ILCE-7M2K/BQ IN5 Mirrorless Camera Body with 28 - 70 mm Lens</p>
+                    <p>₹81,990</p>
+                    <div class="product_rating">
+                        <p><i class='bx bxs-star'></i>&nbsp;&nbsp;4.4</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="products">
+                <div class="product_img">
+                    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/y/p/x/-original-imagfb9vkgbf6hb8-bb.jpeg?q=70" alt="">
+                </div>
+                <div class="product_det">
+                    <p>Volga Hiking & Trekking Shoes For Men  (Black)</p>
+                    <p>₹1,719</p>
+                    <div class="product_rating">
+                        <p><i class='bx bxs-star'></i>&nbsp;&nbsp;4.2</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="products">
+                <div class="product_img">
+                    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/computer/y/i/y/mphg3hn-a-thin-and-light-laptop-apple-original-imagmfhepavqyfyy.jpeg?q=70" alt="">
+                </div>
+                <div class="product_det">
+                    <p>APPLE 2023 MacBook Pro M2 Max - (32 GB/1 TB SSD/macOS Ventura) MPHG3HN/A  (14 Inch, Space Grey, 1.63 Kg)</p>
+                    <p>₹2,85,490</p>
+                    <div class="product_rating">
+                        <p><i class='bx bxs-star'></i>&nbsp;&nbsp;4.8</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="products">
+                <div class="product_img">
+                    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/book/k/q/b/hands-on-machine-learning-with-scikit-learn-keras-and-tensorflow-original-imaggywzjnhhnzk8.jpeg?q=70" alt="">
+                </div>
+                <div class="product_det">
+                    <p>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems, Third Edition (Full Colour Print)  (Paperback, Aurélien Géron)</p>
+                    <p>₹3,000</p>
+                    <div class="product_rating">
+                        <p><i class='bx bxs-star'></i>&nbsp;&nbsp;4.7</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="products">
+                <div class="product_img">
+                    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/3/d/i/l-jc22-hd-fs-black-jmc-pckt-jump-cuts-original-imagg3yxfk48y7nt.jpeg?q=70" alt="">
+                </div>
+                <div class="product_det">
+                    <p>Men Printed Hooded Neck Cotton Blend Black T-Shirt</p>
+                    <p>₹359</p>
+                    <div class="product_rating">
+                        <p><i class='bx bxs-star'></i>&nbsp;&nbsp;3.8</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        
+    </main>
+    
+    
+    <footer>
+        <div id="flipkart_details">
+             <div class="details"><p>ABOUT</p>
+                 <a href="">Contact Us</a>
+                 <a href="">About Us</a>
+                 <a href="">Careers</a>
+                 <a href="">Flipkart Stories</a>
+                 <a href="">Press</a>
+                 <a href="">Flipkart Wholesale</a>
+                    <a href="">Corporate Information</a>
+                </div>
+                <div class="details"><p>HELP</p>
+                    <a href="">Payament</a>
+                    <a href="">Shipping</a>
+                 <a href="">Cancellation & Returns</a>
+                 <a href="">FAQ</a>
+                 <a href="">Report Infrigment</a>
+             </div>
+             <div class="details"><p>CONSUMER POLICY </p>   
+                 <a href="">Return Policy</a>
+                 <a href="">Terms Of Use</a>
+                 <a href="">Security</a>
+                 <a href="">Privacy</a>
+                  <a href="">Sitemap</a>
+                 <a href="">Grievance</a>
+                 <a href="">Redressal</a>
+                    <a href="">EPR Compliance</a>
+             </div>
+             <div class="details"><p>SOCIAL</p>
+                 <a href="">Facebook</a>
+                 <a href="">Twitter</a>
+                 <a href="">You Tube</a>
+              </div>
+              <div class="details"><p>Mail Us</p>
+                 <ul>
+                     <li>Flipkart Internet Private Limited,</li>
+                     <li>Buildings Alyssa, Begonia &</li>
+                     <li>Clove Embassy Tech Village,</li>
+                     <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                      <li>Bengaluru, 560103,</li>
+                     <li>Karnataka, India</li>
+                 </ul>
+             </div>
+             <div class="details"><p>Registered Office Address:</p>
+                 <ul>
+                     <li>Flipkart Internet Private Limited,</li>
+                     <li>Buildings Alyssa, Begonia &</li>
+                     <li>Clove Embassy Tech Village,</li>
+                     <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                     <li>Bengaluru, 560103,</li>
+                     <li>Karnataka, India</li>
+                     <li>CIN : U51109KA2012PTC066107</li>
+                     <li> 044-45614700</li>
+                 </ul>
+             </div>
+        </div>
+        <hr>
+        <div id="end">
+            <a href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K" alt=""> Become A Seller</a>
+            <a href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0zLTNoMjB2MjBILTN6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAuNDkyIDNDNi4zNTMgMyAzIDYuMzYgMyAxMC41YzAgNC4xNCAzLjM1MyA3LjUgNy40OTIgNy41QzE0LjY0IDE4IDE4IDE0LjY0IDE4IDEwLjUgMTggNi4zNiAxNC42NCAzIDEwLjQ5MiAzem0zLjE4IDEyTDEwLjUgMTMuMDg4IDcuMzI3IDE1bC44NC0zLjYwN0w1LjM3IDguOTdsMy42OS0uMzE1TDEwLjUgNS4yNWwxLjQ0IDMuMzk4IDMuNjkuMzE1LTIuNzk4IDIuNDIyLjg0IDMuNjE1eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt=""> Advertise</a>
+            <a href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE4IDE3Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLTFoMjB2MjBILTF6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTYuNjY3IDVIMTQuODVjLjA5Mi0uMjU4LjE1LS41NDIuMTUtLjgzM2EyLjQ5NyAyLjQ5NyAwIDAgMC00LjU4My0xLjM3NUwxMCAzLjM1bC0uNDE3LS41NjdBMi41MSAyLjUxIDAgMCAwIDcuNSAxLjY2N2EyLjQ5NyAyLjQ5NyAwIDAgMC0yLjUgMi41YzAgLjI5MS4wNTguNTc1LjE1LjgzM0gzLjMzM2MtLjkyNSAwLTEuNjU4Ljc0Mi0xLjY1OCAxLjY2N2wtLjAwOCA5LjE2NkExLjY2IDEuNjYgMCAwIDAgMy4zMzMgMTcuNWgxMy4zMzRhMS42NiAxLjY2IDAgMCAwIDEuNjY2LTEuNjY3VjYuNjY3QTEuNjYgMS42NiAwIDAgMCAxNi42NjcgNXptMCA2LjY2N0gzLjMzM3YtNWg0LjIzNEw1LjgzMyA5LjAyNWwxLjM1Ljk3NSAxLjk4NC0yLjdMMTAgNi4xNjdsLjgzMyAxLjEzMyAxLjk4NCAyLjcgMS4zNS0uOTc1LTEuNzM0LTIuMzU4aDQuMjM0djV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz4KICAgIDwvZz4KPC9zdmc+Cg==" alt=""> Gift Cards</a>
+            <a href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTNoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOS41IDNDNS4zNiAzIDIgNi4zNiAyIDEwLjUgMiAxNC42NCA1LjM2IDE4IDkuNSAxOGM0LjE0IDAgNy41LTMuMzYgNy41LTcuNUMxNyA2LjM2IDEzLjY0IDMgOS41IDN6bS43NSAxMi43NWgtMS41di0xLjVoMS41djEuNXptMS41NTMtNS44MTNsLS42NzYuNjljLS41NC41NDgtLjg3Ny45OTgtLjg3NyAyLjEyM2gtMS41di0uMzc1YzAtLjgyNS4zMzgtMS41NzUuODc3LTIuMTIzbC45My0uOTQ1Yy4yNzgtLjI3LjQ0My0uNjQ1LjQ0My0xLjA1NyAwLS44MjUtLjY3NS0xLjUtMS41LTEuNVM4IDcuNDI1IDggOC4yNUg2LjVhMyAzIDAgMSAxIDYgMGMwIC42Ni0uMjcgMS4yNi0uNjk3IDEuNjg4eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt=""> Help Center</a>
+            <p>© 2007-2023 Flipkart.com</p>
+            <img id="paymentmet" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt="">
+        </div>
+    </footer>
+</body>
+</html>

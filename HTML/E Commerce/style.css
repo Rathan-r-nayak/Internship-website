@@ -1,0 +1,195 @@
+body{
+    font-family: 'Roboto';
+}
+#navbar_header{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    margin: -8px -8px 10px -8px;
+    background-color: #2874f0;
+    position: fixed;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /* flex-wrap: wrap; */
+}
+.navbar{
+    margin: 10px 50px;
+    display: flex;
+    align-items: center;
+}
+#searchbar{
+    height: 40px;
+    width: 330px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.a_anchor{
+    all: unset;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: 100;
+}
+.a_anchor:hover{
+    color: aqua;
+    animation-name: a_hover;
+}
+#form-popup {
+    display: none;
+    position: fixed;
+    border: 3px solid #f900cb;
+}
+
+.form-container {
+    width: 400px;
+    height: 444px;
+    margin-top: 20px;
+    margin-left: -250px;
+    position:absolute;
+    padding: 30px;
+    background-color: aliceblue;
+}
+.close_form{
+    all: unset;
+    cursor: pointer;
+    margin-top: -30px;
+    margin-right: -30px;
+    float: right;
+}
+.form-container input[type=text], input[type=password] {
+        font-family: 'Carter One', cursive;
+        font-size: 20px;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 15px 0;
+        display: inline-block;
+        /* border: 1px solid aqua; */
+        box-sizing: border-box;
+        background-color: rgba(128, 128, 128, 0.312);
+        border: 2px solid rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        color:black;
+}
+.form-container .btn {
+background-color: orange;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-top:30px;
+opacity: 0.8;
+border-radius: 3px;
+}
+.btn_a{
+    text-decoration: none;
+    color: white;
+}
+.form-container .btn:hover{
+background-color: rgb(222, 148, 10);
+}
+#category_navbar{
+    height: 150px;
+    width: 100%;
+    margin: -8px -8px 10px -8px;
+    background-color: aliceblue;
+}
+
+#products{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.products{
+    /* border: 2px solid rgb(0, 255, 242); */
+    width: 400px;
+    height: fit-content;
+    margin: 5px;
+}
+.product_img{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.product_det{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+}
+.product_rating p{
+    background-color: green;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+footer{
+    background-color: #172337;
+    color: aliceblue;
+    width:120%;
+    margin: auto -10px -10em -10px;
+    padding: 5px 5px 30px 5px;
+}
+footer *{
+
+}
+
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+footer p{
+    color: aqua;
+}
+footer li{
+    list-style: none;
+}
+#flipkart_details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: max-content;
+    margin:0px 50px;
+}
+.details *{
+    padding: 10px;
+}
+#end{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    /* align-content: space-evenly; */
+    
+}
+/* #end * {
+    /* width: max-content;
+    margin: auto 30px;
+} */
+#end a{
+    padding: 10px;
+    margin: auto 50px;
+}
+#end p{
+    padding: 10px;
+    color: white;
+    margin: auto 50px;
+}
+#paymentmet{
+    padding: 10px;
+    margin: auto 50px;
+}

@@ -1,9 +1,19 @@
-# Blog about cars
+# VTPL Internship
 
-#### this is a simple static website which has the blog about cars
 
-<br>
+## HTML
+* Blog on cars
+* College website
+* E-Commerce website
+* Portfolio
 
-# A College website
 
-#### A college website with some description
+## JAVASCRIPT
+* Array
+* Bool
+* Concat
+* Functions
+
+
+## REACT
+*
